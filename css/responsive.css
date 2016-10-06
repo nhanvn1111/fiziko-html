@@ -1,0 +1,375 @@
+/* Table of Contents
+==================================================
+01. RETINA STYLES
+02. BASE STYLES (1140px)
+03. #DESKTOP (960px)
+04. #Tablet (Portrait)
+05. #Mobile (Portrait)
+*/
+
+
+
+/*
+=============================================== 01. RETINA STYLES ===============================================
+*/
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+	body nav select {background:#FAFAFA url(../images/select-arrow@2x.png) center right no-repeat; background-size:contain;}
+	.flex-direction-nav a {background-image: url(../images/slider/arrows@2x.png); background-size:80px 60px;}
+}
+
+/* IE7-IE8 Fixes*/
+.lt-ie9	body nav select {background: url(../images/select-arrow.png) center right no-repeat;}
+.lt-ie9 .flex-direction-nav a {background-image: url(../images/slider/arrows.png); background-size:68px 69px;}
+
+
+/*
+=============================================== 02. BASE STYLES (1140px) ===============================================
+*/
+/* Note: Design for a width of 1040px */
+html {-webkit-text-size-adjust: none;}	/* Removes webkit font resizing */ 
+body {max-width:100%; width:100%;}
+img {max-width:100%; height: auto; }
+.width-container, .flex-caption .slider-container {-moz-transition: all .2s ease-in-out; -webkit-transition: all .2s ease-in-out; }
+
+
+/*
+=============================================== 03. #DESKTOP (960px) ===============================================
+*/
+/* Note: Design for a width of 960px */
+@media only screen and (min-width: 959px) and (max-width: 1190px) {
+	
+.flex-caption .slider-container, .width-container, .home-widget .textwidget {width:92%;} /* Default Width */
+
+
+.sf-menu a { padding-right:7px; padding-left:7px;}
+
+#page-title h1 { font-size:58px;}
+h1 {font-size:38px; }
+h2 {font-size:28px; }
+.footer-highlight h2  {font-size:30px;}
+h3 {font-size:26px; }
+body .home-content-highlight li.product h3.product-title-index-pro, body #main h3.product-title-index-pro 
+{font-size:23px;}
+h4 {font-size:23px; }
+h5 {font-size:20px; }
+h6 {font-size:17px; }
+
+.training-posts-about-img img {position: absolute;}
+.difficulty-wrapper {width: 220px;}
+.author-avatar-pro img {width: 55px; margin-right: 10px;}
+.meta-progression .meta-container {width: 65%;}
+span.posted-meta-pro {margin-top: -4px;}
+.contact-image {max-width: 38%;}
+.training-posts-img {display: none;}
+.training-slider {width: 90%; margin: 0 auto;}
+#trainer-slider-wrapper { margin-left: 0;}
+.flexslider.training-slider-pro {float: none; width: 100%;}
+.footer-highlight {padding: 152px 0;}
+
+}
+
+
+/*
+=============================================== 04. #Tablet (Portrait) ===============================================
+*/
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+
+/* Default Width */
+.width-container { width:92%; }
+
+.commentlist {width:68%;}
+
+/* WooCommerce Columns */
+body #main .width-container li.product.column-4 {margin-right:2%; width: 23.5%; clear:none;}
+body #main .width-container li.product.column-3 {margin-right:2%; width: 32%; clear:none;}
+body #main .width-container li.product.column-2 {margin-right:2%; width: 49%; clear:none; }
+
+
+body #main .width-container li.product.column-2.last, body #main .width-container li.product.column-3.last, body #main .width-container li.product.column-4.last, .lt-ie8 body #main .width-container li.product.column-2.last, .lt-ie8 body #main .width-container li.product.column-3.last, .lt-ie8 body #main .width-container li.product.column-4.last {margin-right:0%;}
+
+body #main .width-container li.product { float:left;}
+body #main .width-container li.product.first { clear: both;}
+
+body #main .width-container .columns-2 li.product {margin-left:1%;margin-right:1%; width: 48%; }
+body #main .width-container .columns-3 li.product {margin-left:1%;margin-right:1%; width: 31.3%; }
+body #main .width-container .columns-4 li.product {margin-left:1%;margin-right:1%; width: 23%; }
+
+
+/* Header Styles */
+.sf-menu a { padding-right: 7px; padding-left: 7px; }
+header .social-ico { margin-left:3px; float:none; position:absolute; top:-32px; right:0px;}
+header .social-ico a i {
+	font-size:12px;
+	margin-left:2px;
+	padding:3px;
+	min-width:13px;
+}
+
+body, footer {font-size:13px;}
+
+.footer-highlight a.ls-sc-button.fiziko-footer-button {margin: 30px;}
+
+.meta-progression .meta-container {width: 100%;}
+
+body #main .width-container #respond input#submit, body #main a.button, body #main button.single_add_to_cart_button, body #main input.button, body.woocommerce-cart #main td.actions input.button.checkout-button, body #main button.button, body #single-product-pro a.button, body #single-product-pro button.single_add_to_cart_button, body #single-product-pro input.button, body.woocommerce-cart #single-product-pro input.button.checkout-button, body #single-product-pro button.button, body a.progression-button, body input.wpcf7-submit, body input#submit, body a.ls-sc-button.default {
+	margin: 30px 0px 6px 0px;
+	padding: 13px 15px;
+	font-size: 14px;
+}
+
+.contact-image {display: none;}
+.form-progression {float: none;max-width: 80%;padding: 90px 0;margin: 0 auto;}
+span.posted-meta-pro {margin-top: -4px;}
+h2.blog-title {max-width: 65%;}
+.featured-media-overlay .trainer-name {font-size: 16px;}
+.featured-media-overlay .trainer-dsc {font-size: 13px;}	
+#trainers-filter {min-height: 500px;}
+.isotope-title-index {font-size: 16px;}
+.isotope-price-index {font-size: 15px; margin-top: 5px;}
+.isotope-index-text ul {display: none;}
+body ul.trainer-class-schedule .sessions-day.grid2column-progression {	width: 50%;}
+body ul.trainer-class-schedule .sessions-price.grid2column-progression {width: 25%; float: left; margin-left: 15px;}
+body ul.trainer-class-schedule li .sessions-price {font-size: 16px;}
+.difficulty-wrapper {width: 175px;}	
+.sessions-class-single .class-price-pro {float: none;}
+.author-avatar-pro img {max-width: 55px; margin-right: 15px;}
+#sidebar .author-avatar-pro img {	margin: 15px 50px 20px 50px; float: none; max-width: 85px;}
+#sidebar .author-meta-pro, #sidebar .category-meta-pro {float: none;}
+.single-class-read {	margin-top: -3px;}
+#sidebar .single-class-read {margin-top: -25px;}
+#about-classes .class-name {font-size: 15px;}
+.training-posts-about-img img { margin: -97px 0px -90px -120px; position: absolute;}
+#about-trainers-filter {min-height: 336px;}
+.training-posts-img {display: none;}
+.training-slider {width: 90%; margin: 0 auto;}
+#trainer-slider-wrapper { margin-left: 0;}
+.flexslider.training-slider-pro {float: none; width: 100%;}
+.trainers-content-index .grid2column-progression {width: 100%; margin: 0; text-align: center;}
+#training-posts-home .fiziko-slider-pro .flex-control-nav {position: relative; margin: 0; padding: 10px 0 70px 0;}
+.training-slider h2.home-widget {margin: 0;}
+.home-widget-caption {padding: 15px 0;}
+.trainers-content-index {padding: 20px 18px;}
+.trainers-sep {margin: 0 -18px;}
+.footer-highlight {padding: 99px 0;}
+.footer-highlight h2 {float:none; margin:30px 0px;}
+.footer-highlight a.ls-sc-button.fiziko-footer-button {width: 70%; float: none; margin: 15px auto 0 auto; padding: 10px 20px;}
+.isotope-item {width: 50%;}
+
+
+#page-title h1 { font-size:56px;}
+h1 {font-size:36px; }
+h2 {font-size:26px; }
+.footer-highlight h2  {font-size:28px;}
+h3 {font-size:24px; }
+body .home-content-highlight li.product h3.product-title-index-pro, body #main h3.product-title-index-pro 
+{font-size:21px;}
+h4 {font-size:21px; }
+h5 {font-size:18px; }
+h6 {font-size:16px; }
+
+
+}
+
+
+/*
+=============================================== 05. #Mobile (Portrait) ===============================================
+*/
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+	
+body, footer {font-size:13px;}
+
+/* Default Width */
+.width-container, .flex-caption .slider-container, .home-widget .textwidget { width:90%; }
+
+#fixed-header-pro {position:relative !important;}
+.pro-header-spacing {display:none !important;}
+#content-container-sidebar {width: 100%; float: none; margin-bottom: 35px;}
+
+/* Default Grid */
+.footer-2-column .widget, .footer-3-column .widget, .footer-4-column .widget,
+#sidebar, #content-container, footer .footer-2-column .widget, footer .footer-3-column .widget, footer .footer-4-column .widget,
+.grid2column-progression, .grid3column-progression, .grid3columnbig-progression, .grid4column-progression, .grid4columnbig-progression,
+#sidebar, #content-container {
+	width:100%; margin-bottom:10px;
+}
+
+body #main .width-container li.product.column-2, body #main .width-container li.product.column-3, body #main .width-container li.product.column-4, .lt-ie8 body #main .width-container li.product.column-2, .lt-ie8 body #main .width-container li.product.column-3, .lt-ie8 body #main .width-container li.product.column-4 
+{
+	margin-left:0px !important;
+	margin-right:0px !important;
+	width:100% !important;
+	margin-bottom:10px;
+}
+
+.alignright {float: none; margin: 0;}
+#map-progression {height: 250px !important; overflow: hidden;}
+
+.wpcf7 select, #respond select {
+	width: 223px;
+}
+
+div#pro-home-slider {margin-top: 0px;}
+.home-widget-caption {font-size: 14px; text-align: center; padding: 15px 0;}
+.training-posts-img {display: none;}
+.training-slider {width: 90%; margin: 0 auto;}
+#trainer-slider-wrapper { margin-left: 0;}
+.flexslider.training-slider-pro {float: none; width: 100%;}
+.trainers-content-index .grid2column-progression {width: 100%; margin: 0; text-align: center;}
+#training-posts-home h2.home-widget {text-align: center; margin-left: 0;}
+.training-slider .training-columns {padding: 30px 5%; height: auto; width: 90%;float: none;}
+.training-posts-about-img {display: none;}
+.about-training-slider-wrapper {width: 90%; float: none; margin: 0 auto;}
+.testimonial-img img {float: none; max-width: 130px; margin: 0 auto;}
+.testimonial-text {padding-left: 0; font-size: 15px; text-align: center;}
+.testimonial-author {padding-left: 0; text-align: center;}
+#filters .btn {margin-bottom: 15px;}
+.isotope-item {width: 100%;}
+.isotope-index-text ul li {line-height: 1; font-size: 12px;}
+.isotope-price-index {font-size: 16px; margin-top: 8px;}
+.isotope-button-index.ls-sc-button {margin-top: 10px; margin-bottom: 0;}
+.isotope-title-index {font-size: 17px;}
+.counter-fiziko h2.counter {margin-top: 20px; font-size: 40px; margin-bottom: 0px;}
+#about-counter .description {margin-bottom: 35px;}
+.class-archive-name {float: none;}
+.sidebar-class-schedule {float: none; text-align: center;}
+.class-archive-meta {float: none; text-align: center; margin-bottom: 15px;}
+.class-archive-name h3 {text-align: center; padding: 30px 0;}
+.difficulty-wrapper {width: 100%;}
+body ul.trainer-class-schedule .sessions-day.grid2column-progression {width: 60%;}
+body ul.trainer-class-schedule .sessions-price.grid2column-progression {width: 25%; float: left; margin-left: 5%;}
+#sidebar {padding-bottom: 45px;}
+.featured-blog-progression a.post-featured-image img, .featured-blog-progression .flexslider {float: none; max-width: 100%; margin: 0;}
+.entry-content {float: none; width: 100%; max-width: 100%;}
+h2.blog-title {float: none; max-width: 100%; margin-top: 25px;}
+.posted-meta-pro {float: left; margin-bottom: 25px;}
+.meta-progression .meta-container {float: none; width: 100%;}
+.meta-progression .meta-button-container {float: none; margin-top: 25px;}
+body .meta-progression a.blog-button.ls-sc-button.default {float: none; width: 100%;}
+#page-title.page-title-blog h1 {float: none; max-width: 100%; font-size: 35px;}
+.page-title-meta {width: 100%; float: none; padding: 0;}
+.address-title {font-size: 25px;}
+.address-details {font-size: 19px;}
+.contact-info {margin-bottom: 35px;}
+.contact-image {display: none;}
+.form-progression {float: none; width: 85%; margin: 0 auto; padding: 90px 0; max-width: 85%}
+body .content-boxed-fiziko {margin-bottom: 35px;}
+.fiziko-slider-pro .flex-control-nav {position: relative; margin: 0; padding: 10px 0 70px 0;}
+.training-slider h2.home-widget {margin: 0;}
+#training-posts-about .home-widget-caption {text-align: left;}
+.footer-highlight {padding: 103px 0;}
+.footer-highlight h2 {float:none; margin:30px 0px;}
+.footer-highlight a.ls-sc-button.fiziko-footer-button {width: 95%; float: none; margin: 15px auto 0 auto; padding: 10px 15px; font-size: 14px;}
+
+
+/* Select Menu */
+h1#logo {float:none !important; padding:0px; margin:0 auto; text-align:center;}
+nav {float:none; margin:0 auto 15px auto;  background:none;}
+header .social-ico {
+	float:none;
+	margin:0 auto 10px auto;
+	text-align:center;
+}
+nav ul { display: none;  }  
+nav select option { background:#fff; color:#888;}
+nav select { text-transform:none; display:block;  margin-left:auto; margin-right:auto; width:300px; min-width: 150px; max-width: 100%; -webkit-appearance: none; -moz-appearance: normal; appearance: normal;
+-webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
+ -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+-webkit-padding-end: 20px; -webkit-padding-start: 2px; -webkit-user-select: none;-moz-user-select: none;
+background-color:#FAFAFA;
+background:#FAFAFA url(../images/select-arrow.png) center right no-repeat;
+font-size:13px;
+border: 1px solid #aaaaaa;
+color: #555555;
+padding:7px 5px 7px 10px;
+}
+
+
+footer #copyright {
+	float:none;
+	text-align:center;
+}
+#widget-area .widget {
+	padding:32px 0px 25px 0px;
+}
+#widget-area .widget .grid2column-progression {
+	width:48%;
+	float:left;
+}
+
+
+
+
+.footer-social-icons {float: none;}
+
+#widget-area #mc_embed_signup input {padding: 15px 5%;}
+
+.footer-highlight .summary-text-pro {
+	float:none;
+}
+
+.footer-highlight #mc_embed_signup {
+	height:auto;
+	margin:10px auto 0px auto;
+	top:0px;
+	float:none;
+}
+
+/* BLOG Adjustments */
+.commentlist {width:95%; left:-10px;}
+.commentlist .children li.comment .comment-meta {margin-left:0px;}
+.commentlist .avatar, .commentlist > li:before {display:none;}
+.commentlist .avatar {display:none;}
+
+/* WOOCOMMERCE */
+.product-remove {display:none;}
+#single-product-pro .entry-summary { padding:0px; background:none; }
+body.woocommerce .commentlist {left:0px;}
+.comment-text {
+	width:90% !important;
+	margin:0px !important;
+	margin-left:-10px !important;
+}
+
+.portfolio-index-text.video-portfolio-pro {
+	position:relative;
+}
+img.filler-pro {display:none;}
+.video-pro-portfolio {height:auto; margin:0px;}
+
+.woocommerce table.cart {
+	font-size:10px;
+}
+
+.googlemap {
+	max-height:250px !important;
+}
+
+.wpcf7 input, #respond input {width:185px;}
+.wpcf7 textarea, #respond textarea {width:185px; }
+
+
+
+
+#page-title h1 { font-size:45px;}
+h1 {font-size:34px; }
+h2 {font-size:24px; }
+.footer-highlight h2  {font-size:20px;}
+h3 {font-size:22px; }
+body .home-content-highlight li.product h3.product-title-index-pro, body #main h3.product-title-index-pro 
+{font-size:20px;}
+h4 {font-size:20px; }
+h5 {font-size:17px; }
+h6 {font-size:14px; }
+
+.fc-widget-content, .fc-day-grid-container, .fc-day-grid {
+	min-height:315px;
+}
+
+
+}
